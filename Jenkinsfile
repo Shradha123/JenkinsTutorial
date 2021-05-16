@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               'npm config ls'
+               sh 'npm config ls'
             }
         }
         stage('Test') {
