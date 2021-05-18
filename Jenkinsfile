@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh 'npm config ls'
+               bat 'npm config ls'
             }
         }
         stage('Test') {
