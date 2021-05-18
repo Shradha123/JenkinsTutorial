@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               bat 'npm config ls'
+               bat 'npm install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+               bat 'npm run build'
             }
         }
         stage('Deploy') {
